@@ -32,6 +32,6 @@ body {
     color: blue !important;
   }
   .tautan:hover {
-    color: rgb(255, 6, 6) !important;
+    color: rgb(253, 0, 0) !important;
     background-color: blue;
   }
