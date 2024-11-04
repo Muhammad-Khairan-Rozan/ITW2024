@@ -21,6 +21,7 @@ table {
 body {
     font: 16px/28px arial, sans-serif;
     background-image: url(nick-zfMKkrG8ZY0-unsplash.jpg);
+    background-size: cover;
 }
 .container {
     width: 800px;

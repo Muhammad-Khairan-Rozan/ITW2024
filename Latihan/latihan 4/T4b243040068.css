@@ -1,0 +1,100 @@
+body {
+ 
+    font: 16px/28px mono;
+    background-image: url(motogp\ 1.jpg);
+    background-size: cover;
+}
+.container {
+    width: 800px;
+    background-size: cover;
+    margin: auto;
+    background-image: url(Dark\ Deep\ Red\ Gradient\ Background.jpg);
+}
+.header {
+    padding: 10px;
+    padding-bottom: 10px;
+  }
+  .header .judul {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    font-style:italic;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 0px;
+    text-align: center;
+  }
+  .lol ul li {
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 10px;
+  }
+  .lol a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 3px;
+  }
+  .lol {
+    text-align: center;
+  }
+  .lol a:hover {
+    background-color: #000000;
+    color: white;
+  }
+  .hero {
+    height: 450px;
+    background-image: url(motogp\ 2.jpg);
+      background-size: cover;
+      background-position: 10 -180px;
+      border-top: 5px solid rgb(255, 255, 255);
+      border-bottom: 5px solid rgb(255, 255, 255);
+  }
+  .hero2 {
+    height: 1000px;
+    background-image: url(rematch.jpg);
+      background-size:cover;
+      border-start-end-radius: 0px;
+
+  }
+  .content {
+      padding: 20px;
+      color: #ffffff;
+  }
+  .judulh2 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: aliceblue;
+      background-color: #000000;
+      padding-inline: 20px;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-align: center;
+  }
+  .content .penulis {
+      font-size: 11px;
+      margin-top: 1px;
+      text-align: center;
+  }
+  .content .penulis a {
+      color: salmon;
+      text-decoration: none;
+  }
+  .content p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: aliceblue;
+      text-align:justify;
+  }
+  .lli {
+    text-align: center;
+  }
+  .footer {
+      background-color: #333;
+      padding: 10px;
+  }
+  .footer .copy {
+      color: #eaeaea;
+      text-align: center;
+      font-size: 12px;
+  }
