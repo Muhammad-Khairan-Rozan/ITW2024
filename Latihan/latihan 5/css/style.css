@@ -33,39 +33,54 @@ h1 {
 .gallery li,
 .gallery li img,
 .gallery li span {
-    border-radius: 50%;
+    border-bottom-right-radius: px;
+    border-top-left-radius: 50px;
 }
 
 .gallery li {
     width: 137px;
-    height: 137px;
+    height: 206px;
     /*overflow: hidden;*/
     border: 5px solid #000000;
     float: left;
     margin-right: 10px;
-    position: relative;
-    background-color: rgb(255, 179, 0);
+    position:relative;
+    background-color: #ffb300;
 }
 
 .gallery li span {
     display: block;
     width: 137px;
-    height: 137px;
-    background-color: rgba(200,200,200,.5);
+    height: 207px;
+    background-color: #ffb30066;
     position: absolute;
     top: 0;
+    font-size: 40px;
     text-align: center;
-    line-height: 137px;
-    color: #333;
-    text-shadow: 1px 1px 1px #ddd;
+    line-height: 340px;
+    color: #ffffff;
+    text-shadow: 3px 1px 1px #ff7700;
     opacity: 0;
-    transform: scale(0) rotate(0);
+    transform: rotate(0);
     transition: .3s;
+}
+
+.asli1 span{
+    background-image: url(../img/thumbs/Main_menu_engineer.png);
+}
+.asli2 span {
+    background-image: url(../img/thumbs/Main_menu_heavy.png);
+}
+.asli3 span {
+    background-image: url(../img/thumbs/Main_menu_medic.png);
+}
+.asli4 span {
+    background-image: url(../img/thumbs/Main_menu_soldier.png);
 }
 
 .gallery li a:hover span {
     opacity: 1;
-    transform: scale(1) rotate(360deg);
+    transform: scale(1)
 }
 
 /*overlay*/
@@ -79,8 +94,8 @@ h1 {
     background-color: rgba(0,0,0,0);
     z-index: 9999;
     transition: 1s;
-    text-align: center;
-    padding: 70px;
+    text-align: left;
+    padding: px 0;
 }
 
 .overlay:target {
@@ -93,20 +108,22 @@ h1 {
 
 .overlay img {
     max-height: 100%;
+    margin-left: 150px;
+    border-bottom: 5px solid #000000;
+    
 }
 
 .overlay:target img {
     animation: zoomDanFade 1s;
     border-radius: 0;
-    background-color: #ff000036;
-    border: 5px solid;
+ 
 }
 
 .overlay .close {
     position: absolute;
     top: 30px;
     left: 50%;
-    margin-left: -25px;
+    margin-left: 600px;
     color: white;
     text-decoration: none;
     background-color: #000000;
@@ -120,7 +137,85 @@ h1 {
     animation: slideDownFade .5s .5s forwards;
 }
 
+.overlay:target .next,
+.overlay:target .prev {
+    animation: fadein .5s .5s forwards;
+}
+
+.overlay:target .teks1,
+.overlay:target .teks2,
+.overlay:target .teks3,
+.overlay:target .teks4 {
+    animation: fadein2 .5s .20s forwards;
+    position: absolute;
+    text-align:justify;
+    margin-left: 50%;
+    margin-right: 5%;   
+    text-indent: -999;
+    top: 17%;    
+    margin-bottom: 10%;
+    color: white;
+    opacity: 0;
+    width: 900px 0;
+    height: 50% ;
+}
+
+.teks1,
+.teks2,
+.teks3,
+.teks4 {
+    background-color: #0000004b;
+    overflow: auto;
+    padding: 60px;
+    padding-top: 0px;
+    border-radius: 50px;
+}
+
+/*navigasi */
+.next {
+    width: 90px;
+    height: 90px;
+    background-image: url(../img/right-arrow.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 35%;
+    margin-left: 20px;
+    opacity: 0;
+}
+
+.prev {
+width: 90px;
+height: 90px;
+background-image: url(../img/left-arrow.png);
+position: absolute;
+text-indent: -9999px;
+top: 35%;
+margin-left: 30px;
+opacity: 0;
+}
+
 /* animasi */
+
+@keyframes fadein2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
 @keyframes zoomDanFade {
     0% {
         transform: scale(0);
